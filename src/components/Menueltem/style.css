@@ -1,0 +1,104 @@
+.menu-item {
+    align-items: flex-start;
+    display: flex;
+    gap: var(--size-space-300);
+    overflow: hidden;
+    padding: var(--size-space-300) var(--size-space-400) var(--size-space-300) var(--size-space-400);
+    position: relative;
+    width: 320px;
+  }
+  
+  .menu-item .star {
+    height: 20px !important;
+    position: relative !important;
+    width: 20px !important;
+  }
+  
+  .menu-item .body {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: var(--size-space-100);
+    position: relative;
+  }
+  
+  .menu-item .row {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+  }
+  
+  .menu-item .label {
+    flex: 1;
+    font-family: var(--body-base-font-family);
+    font-size: var(--body-base-font-size);
+    font-style: var(--body-base-font-style);
+    font-weight: var(--body-base-font-weight);
+    letter-spacing: var(--body-base-letter-spacing);
+    line-height: var(--body-base-line-height);
+    margin-top: -1px;
+    position: relative;
+  }
+  
+  .menu-item .class {
+    color: var(--color-text-brand-on-brand) !important;
+  }
+  
+  .menu-item .menu-shortcut-instance {
+    flex: 0 0 auto !important;
+  }
+  
+  .menu-item .description {
+    align-self: stretch;
+    font-family: var(--body-small-font-family);
+    font-size: var(--body-small-font-size);
+    font-style: var(--body-small-font-style);
+    font-weight: var(--body-small-font-weight);
+    letter-spacing: var(--body-small-letter-spacing);
+    line-height: var(--body-small-line-height);
+    position: relative;
+  }
+  
+  .menu-item.disabled {
+    border-radius: var(--radius-radius-md);
+  }
+  
+  .menu-item.default {
+    border-radius: var(--radius-radius-md);
+  }
+  
+  .menu-item.hover {
+    background-color: var(--color-background-brand-default);
+    border-radius: var(--size-radius-200);
+  }
+  
+  .menu-item.disabled .label {
+    color: var(--color-text-disabled-default);
+  }
+  
+  .menu-item.default .label {
+    color: var(--color-text-default-default);
+  }
+  
+  .menu-item.hover .label {
+    color: var(--color-text-brand-on-brand);
+  }
+  
+  .menu-item.disabled .description {
+    color: var(--color-text-disabled-default);
+  }
+  
+  .menu-item.default .description {
+    color: var(--color-text-default-secondary);
+  }
+  
+  .menu-item.hover .description {
+    color: var(--color-text-brand-on-brand);
+  }
+  
